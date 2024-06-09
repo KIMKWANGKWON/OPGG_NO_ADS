@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "OPGG_NO_ADS",
+  "version": "1.0",
+  "description": "OP.GG에서 생성되는 광고 제거",
+  "icons": {
+    "48": "./logo.png",
+    "128": "./logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.op.gg/*"],
+      "js": ["./index.js"]
+    }
+  ]
+}
